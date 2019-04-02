@@ -5,7 +5,7 @@ import java.awt.*;
 /**
  * A person that can be manipulated and that draws itself on a canvas.
  * 
- * @author  Michael K�lling and David J. Barnes
+ * @author  Michael K�lling and David J. Barnes y Juan Domingo Ortin
  * @version 2016.02.29
  */
 
@@ -20,6 +20,7 @@ public class Person
 
     /**
      * Create a new person at default position with default color.
+     * Crea una nueva persona en la posición por defecto con el color por defecto.
      */
     public Person()
     {
@@ -51,6 +52,7 @@ public class Person
     
     /**
      * Move the person a few pixels to the right.
+     * Mueve la persona unos pocos pixeles hacia la derecha.
      */
     public void moveRight()
     {

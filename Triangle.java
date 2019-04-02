@@ -5,7 +5,7 @@ import java.awt.*;
 /**
  * A triangle that can be manipulated and that draws itself on a canvas.
  * 
- * @author  Michael K�lling and David J. Barnes
+ * @author  Michael K�lling and David J. Barnes and Juan Domingo Ortín.
  * @version 2016.02.29
  */
 
@@ -27,7 +27,7 @@ public class Triangle
         width = 70;
         xPosition = 210;
         yPosition = 140;
-        color = "yellow";
+        color = "purple";
         isVisible = false;
     }
 
@@ -54,7 +54,7 @@ public class Triangle
      */
     public void moveRight()
     {
-        moveHorizontal(25);
+        moveHorizontal(22);
     }
 
     /**
@@ -70,7 +70,7 @@ public class Triangle
      */
     public void moveUp()
     {
-        moveVertical(-25);
+        moveVertical(-22);
     }
 
     /**
@@ -78,7 +78,7 @@ public class Triangle
      */
     public void moveDown()
     {
-        moveVertical(25);
+        moveVertical(22);
     }
 
     /**

@@ -133,13 +133,13 @@ public class Canvas
                 graphic.setColor(Color.black);
                 break;
             case "blue":
-                graphic.setColor(new Color(30, 75, 220));
+                graphic.setColor(new Color(32, 77, 222));
                 break;
             case "yellow":
-                graphic.setColor(new Color(255, 230, 0));
+                graphic.setColor(new Color(257, 232, 2));
                 break;
             case "green":
-                graphic.setColor(new Color(80, 160, 60));
+                graphic.setColor(new Color(82, 162, 62));
                 break;
             case "magenta":
                 graphic.setColor(Color.magenta);
