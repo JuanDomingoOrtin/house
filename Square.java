@@ -81,6 +81,7 @@ public class Square
 
     /**
      * Move the square horizontally by 'distance' pixels.
+     * @param distance
      */
     public void moveHorizontal(int distance)
     {
@@ -91,6 +92,7 @@ public class Square
 
     /**
      * Move the square vertically by 'distance' pixels.
+     * @param distance
      */
     public void moveVertical(int distance)
     {
@@ -101,6 +103,7 @@ public class Square
 
     /**
      * Slowly move the square horizontally by 'distance' pixels.
+     * @param distance
      */
     public void slowMoveHorizontal(int distance)
     {
@@ -125,6 +128,7 @@ public class Square
 
     /**
      * Slowly move the square vertically by 'distance' pixels.
+     * @param distance
      */
     public void slowMoveVertical(int distance)
     {
@@ -149,6 +153,7 @@ public class Square
 
     /**
      * Change the size to the new size (in pixels). Size must be >= 0.
+     * @param newSize
      */
     public void changeSize(int newSize)
     {
@@ -160,6 +165,7 @@ public class Square
     /**
      * Change the color. Valid colors are "red", "yellow", "blue", "green",
      * "magenta" and "black".
+     * @param newColor
      */
     public void changeColor(String newColor)
     {
