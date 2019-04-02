@@ -105,6 +105,7 @@ public class Person
 
     /**
      * Slowly move the person horizontally by 'distance' pixels.
+     * @param distance
      */
     public void slowMoveHorizontal(int distance)
     {
@@ -129,6 +130,7 @@ public class Person
 
     /**
      * Slowly move the person vertically by 'distance' pixels.
+     * @param distance
      */
     public void slowMoveVertical(int distance)
     {
@@ -153,6 +155,8 @@ public class Person
 
     /**
      * Change the size to the new size (in pixels). Size must be >= 0.
+     * @param newHeight
+     * @param newWidth
      */
     public void changeSize(int newHeight, int newWidth)
     {
@@ -165,6 +169,7 @@ public class Person
     /**
      * Change the color. Valid colors are "red", "yellow", "blue", "green",
      * "magenta" and "black".
+     * @param newColor
      */
     public void changeColor(String newColor)
     {

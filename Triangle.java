@@ -27,7 +27,7 @@ public class Triangle
         width = 70;
         xPosition = 210;
         yPosition = 140;
-        color = "green";
+        color = "yellow";
         isVisible = false;
     }
 
@@ -54,7 +54,7 @@ public class Triangle
      */
     public void moveRight()
     {
-        moveHorizontal(20);
+        moveHorizontal(25);
     }
 
     /**
@@ -62,7 +62,7 @@ public class Triangle
      */
     public void moveLeft()
     {
-        moveHorizontal(-20);
+        moveHorizontal(-22);
     }
 
     /**
@@ -70,7 +70,7 @@ public class Triangle
      */
     public void moveUp()
     {
-        moveVertical(-20);
+        moveVertical(-25);
     }
 
     /**
@@ -78,7 +78,7 @@ public class Triangle
      */
     public void moveDown()
     {
-        moveVertical(20);
+        moveVertical(25);
     }
 
     /**
@@ -154,6 +154,8 @@ public class Triangle
 
     /**
      * Change the size to the new size (in pixels). Size must be >= 0.
+     * @param newHeight
+     * @param newWidth
      */
     public void changeSize(int newHeight, int newWidth)
     {
@@ -166,6 +168,7 @@ public class Triangle
     /**
      * Change the color. Valid colors are "red", "yellow", "blue", "green",
      * "magenta" and "black".
+     * @param newColor
      */
     public void changeColor(String newColor)
     {

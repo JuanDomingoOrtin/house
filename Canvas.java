@@ -65,8 +65,8 @@ public class Canvas
         canvas.setPreferredSize(new Dimension(width, height));
         backgroundColor = bgColor;
         frame.pack();
-        objects = new ArrayList<Object>();
-        shapes = new HashMap<Object, ShapeDescription>();
+        objects = new ArrayList<>();
+        shapes = new HashMap<>();
     }
 
     /**
@@ -120,34 +120,36 @@ public class Canvas
     }
 
     /**
-     * Set the foreground color of the Canvas.
-     * @param  newColor   the new color for the foreground of the Canvas 
+     * Set the foreground color of the Canvas. 
+     * @param colorString
      */
     public void setForegroundColor(String colorString)
     {
-        if(colorString.equals("red")) {
-            graphic.setColor(new Color(235, 25, 25));
-        }
-        else if(colorString.equals("black")) {
-            graphic.setColor(Color.black);
-        }
-        else if(colorString.equals("blue")) {
-            graphic.setColor(new Color(30, 75, 220));
-        }
-        else if(colorString.equals("yellow")) {
-            graphic.setColor(new Color(255, 230, 0));
-        }
-        else if(colorString.equals("green")) {
-            graphic.setColor(new Color(80, 160, 60));
-        }
-        else if(colorString.equals("magenta")) {
-            graphic.setColor(Color.magenta);
-        }
-        else if(colorString.equals("white")) {
-            graphic.setColor(Color.white);
-        }
-        else {
-            graphic.setColor(Color.black);
+        switch (colorString) {
+            case "red":
+                graphic.setColor(new Color(235, 25, 25));
+                break;
+            case "black":
+                graphic.setColor(Color.black);
+                break;
+            case "blue":
+                graphic.setColor(new Color(30, 75, 220));
+                break;
+            case "yellow":
+                graphic.setColor(new Color(255, 230, 0));
+                break;
+            case "green":
+                graphic.setColor(new Color(80, 160, 60));
+                break;
+            case "magenta":
+                graphic.setColor(Color.magenta);
+                break;
+            case "white":
+                graphic.setColor(Color.white);
+                break;
+            default:
+                graphic.setColor(Color.black);
+                break;
         }
     }
 
@@ -163,7 +165,7 @@ public class Canvas
         {
             Thread.sleep(milliseconds);
         } 
-        catch (Exception e)
+        catch (InterruptedException e)
         {
             // ignoring exception at the moment
         }
@@ -175,9 +177,9 @@ public class Canvas
     private void redraw()
     {
         erase();
-        for(Object shape : objects) {
+        objects.forEach((shape) -> {
             shapes.get(shape).draw(graphic);
-        }
+        });
         canvas.repaint();
     }
        
@@ -201,6 +203,7 @@ public class Canvas
      */
     private class CanvasPane extends JPanel
     {
+        @Override
         public void paint(Graphics g)
         {
             g.drawImage(canvasImage, 0, 0, null);
@@ -214,8 +217,8 @@ public class Canvas
      */
     private class ShapeDescription
     {
-        private Shape shape;
-        private String colorString;
+        private final Shape shape;
+        private final String colorString;
 
         public ShapeDescription(Shape shape, String color)
         {
