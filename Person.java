@@ -27,7 +27,7 @@ public class Person
         width = 30;
         xPosition = 280;
         yPosition = 190;
-        color = "black";
+        color = "white";
         isVisible = false;
     }
 
@@ -62,7 +62,7 @@ public class Person
      */
     public void moveLeft()
     {
-        moveHorizontal(-20);
+        moveHorizontal(-25);
     }
 
     /**
@@ -70,7 +70,7 @@ public class Person
      */
     public void moveUp()
     {
-        moveVertical(-20);
+        moveVertical(-25);
     }
 
     /**
@@ -78,7 +78,7 @@ public class Person
      */
     public void moveDown()
     {
-        moveVertical(20);
+        moveVertical(25);
     }
 
     /**

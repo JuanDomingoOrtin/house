@@ -52,7 +52,7 @@ public class Square
      */
     public void moveRight()
     {
-        moveHorizontal(20);
+        moveHorizontal(25);
     }
 
     /**
@@ -60,7 +60,7 @@ public class Square
      */
     public void moveLeft()
     {
-        moveHorizontal(-20);
+        moveHorizontal(-25);
     }
 
     /**
@@ -68,7 +68,7 @@ public class Square
      */
     public void moveUp()
     {
-        moveVertical(-20);
+        moveVertical(-25);
     }
 
     /**
@@ -76,7 +76,7 @@ public class Square
      */
     public void moveDown()
     {
-        moveVertical(20);
+        moveVertical(25);
     }
 
     /**
