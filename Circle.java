@@ -1,6 +1,5 @@
 package house;
 
-import java.awt.*;
 import java.awt.geom.*;
 
 /**
@@ -81,6 +80,7 @@ public class Circle
 
     /**
      * Move the circle horizontally by 'distance' pixels.
+     * @param distance
      */
     public void moveHorizontal(int distance)
     {
@@ -91,6 +91,7 @@ public class Circle
 
     /**
      * Move the circle vertically by 'distance' pixels.
+     * @param distance
      */
     public void moveVertical(int distance)
     {
@@ -101,6 +102,7 @@ public class Circle
 
     /**
      * Slowly move the circle horizontally by 'distance' pixels.
+     * @param distance
      */
     public void slowMoveHorizontal(int distance)
     {
@@ -125,6 +127,7 @@ public class Circle
 
     /**
      * Slowly move the circle vertically by 'distance' pixels.
+     * @param distance
      */
     public void slowMoveVertical(int distance)
     {
@@ -149,6 +152,7 @@ public class Circle
 
     /**
      * Change the size to the new size (in pixels). Size must be >= 0.
+     * @param newDiameter
      */
     public void changeSize(int newDiameter)
     {
@@ -160,6 +164,7 @@ public class Circle
     /**
      * Change the color. Valid colors are "red", "yellow", "blue", "green",
      * "magenta" and "black".
+     * @param newColor
      */
     public void changeColor(String newColor)
     {

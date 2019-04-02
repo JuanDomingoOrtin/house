@@ -83,6 +83,7 @@ public class Triangle
 
     /**
      * Move the triangle horizontally by 'distance' pixels.
+     * @param distance
      */
     public void moveHorizontal(int distance)
     {
@@ -93,6 +94,7 @@ public class Triangle
 
     /**
      * Move the triangle vertically by 'distance' pixels.
+     * @param distance
      */
     public void moveVertical(int distance)
     {
@@ -103,6 +105,7 @@ public class Triangle
 
     /**
      * Slowly move the triangle horizontally by 'distance' pixels.
+     * @param distance
      */
     public void slowMoveHorizontal(int distance)
     {

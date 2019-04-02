@@ -41,7 +41,7 @@ public class Person
     }
     
     /**
-     * Hace a esta persona invisible. Si ya era invisible, no hace nada.
+     * Make this person invisible. If it was already invisible, do nothing.
      */
     public void makeInvisible()
     {

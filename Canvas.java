@@ -43,10 +43,10 @@ public class Canvas
     private final JFrame frame;
     private final CanvasPane canvas;
     private Graphics2D graphic;
-    private Color backgroundColor;
+    private final Color backgroundColor;
     private Image canvasImage;
-    private List<Object> objects;
-    private HashMap<Object, ShapeDescription> shapes;
+    private final List<Object> objects;
+    private final HashMap<Object, ShapeDescription> shapes;
     
     /**
      * Create a Canvas.
