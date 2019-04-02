@@ -5,7 +5,7 @@ import java.awt.*;
 /**
  * A triangle that can be manipulated and that draws itself on a canvas.
  * 
- * @author  Michael K�lling and David J. Barnes and Juan Domingo Ortín.
+ * @author  Michael K�lling and David J. Barnes and Juan D.
  * @version 2016.02.29
  */
 

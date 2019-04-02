@@ -8,7 +8,7 @@ package house;
  *
  * This class was written as an early example for teaching Java with BlueJ.
  * 
- * @author  Michael K�lling and David J. Barnes
+ * @author  Michael K�lling and David J. Barnes and Juan D.
  * @version 2016.02.29
  */
 public class Picture
@@ -37,20 +37,20 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
-            wall.moveHorizontal(-140);
-            wall.moveVertical(20);
-            wall.changeSize(120);
+            wall.moveHorizontal(-142);
+            wall.moveVertical(22);
+            wall.changeSize(122);
             wall.makeVisible();
             
             window.changeColor("black");
-            window.moveHorizontal(-120);
-            window.moveVertical(40);
-            window.changeSize(40);
+            window.moveHorizontal(-122);
+            window.moveVertical(42);
+            window.changeSize(42);
             window.makeVisible();
     
-            roof.changeSize(60, 180);
-            roof.moveHorizontal(20);
-            roof.moveVertical(-60);
+            roof.changeSize(62, 182);
+            roof.moveHorizontal(22);
+            roof.moveVertical(-62);
             roof.makeVisible();
     
             sun.changeColor("yellow");

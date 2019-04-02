@@ -5,7 +5,7 @@ import java.awt.geom.*;
 /**
  * A circle that can be manipulated and that draws itself on a canvas.
  * 
- * @author  Michael K�lling and David J. Barnes
+ * @author  Michael K�lling and David J. Barnes Juan D.
  * @version 2016.02.29
  */
 
