@@ -55,13 +55,14 @@ public class Canvas
      * @param height   the desired height for the canvas
      * @param bgColor the desired background color of the canvas
      */
+    
     private Canvas(String title, int width, int height, Color bgColor)
     {
         frame = new JFrame();
         canvas = new CanvasPane();
         frame.setContentPane(canvas);
         frame.setTitle(title);
-        frame.setLocation(30, 30);
+        frame.setLocation(20, 20);
         canvas.setPreferredSize(new Dimension(width, height));
         backgroundColor = bgColor;
         frame.pack();
